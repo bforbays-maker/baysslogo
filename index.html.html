@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jasa Pembuatan Logo Profesional</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #4f46e5, #6366f1);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .price { font-size: 22px; color: #4f46e5; font-weight: bold; }
+    form { display: grid; gap: 15px; }
+    input, textarea, select, button {
+      padding: 12px;
+      font-size: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #4f46e5;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover { background: #4338ca; }
+    footer {
+      background: #111827;
+      color: #9ca3af;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Studio Logo Kreatif</h1>
+  <p>Jasa pembuatan logo profesional & custom sesuai brand Anda</p>
+</header>
+
+<section>
+  <h2>Layanan Kami</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Logo Basic</h3>
+      <p>Desain logo sederhana dan elegan</p>
+      <p class="price">Rp150.000</p>
+    </div>
+    <div class="card">
+      <h3>Logo Premium</h3>
+      <p>Konsep unik + revisi hingga 3x</p>
+      <p class="price">Rp350.000</p>
+    </div>
+    <div class="card">
+      <h3>Branding Package</h3>
+      <p>Logo + warna brand + tipografi</p>
+      <p class="price">Rp750.000</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Form Pemesanan Logo Lengkap</h2>
+  <form onsubmit="kirimPesanan(event)">
+    <h3>1. Data Pemesan</h3>
+    <input type="text" id="nama" placeholder="Nama Lengkap" required />
+    <input type="email" id="email" placeholder="Email Aktif" required />
+    <input type="text" id="whatsapp" placeholder="Nomor WhatsApp" required />
+
+    <h3>2. Informasi Brand</h3>
+    <input type="text" id="brand" placeholder="Nama Brand / Usaha" required />
+    <input type="text" id="slogan" placeholder="Slogan (opsional)" />
+
+    <select id="bidang" required>
+      <option value="">Bidang Usaha</option>
+      <option>Kuliner</option>
+      <option>Fashion</option>
+      <option>Teknologi</option>
+      <option>Pendidikan</option>
+      <option>Kesehatan</option>
+      <option>Lainnya</option>
+    </select>
+
+    <h3>3. Konsep Logo</h3>
+    <select id="gaya" required>
+      <option value="">Gaya Logo</option>
+      <option>Minimalis</option>
+      <option>Modern</option>
+      <option>Elegan</option>
+      <option>Maskot</option>
+      <option>Vintage</option>
+    </select>
+
+    <input type="text" id="warna" placeholder="Warna favorit (contoh: hitam emas)" />
+
+    <textarea id="referensi" rows="3" placeholder="Referensi logo / kompetitor (opsional)"></textarea>
+
+    <h3>4. Paket & Deadline</h3>
+    <select id="paket" required>
+      <option value="">Pilih Paket</option>
+      <option>Basic - Rp150.000</option>
+      <option>Premium - Rp350.000</option>
+      <option>Branding Package - Rp750.000</option>
+    </select>
+
+    <input type="date" id="deadline" required />
+
+    <h3>5. Catatan Tambahan</h3>
+    <textarea id="catatan" rows="4" placeholder="Catatan khusus untuk desainer"></textarea>
+
+    <button type="submit">Kirim Pesanan</button>
+  </form>
+  <p id="status"></p>
+</section>
+
+<script>
+  function kirimPesanan(e) {
+    e.preventDefault();
+    const nama = document.getElementById('fairuz').value;
+    const brand = document.getElementById('bernato').value;
+    document.getElementById('status').innerText = `Terima kasih ${fairuz}. Pesanan logo untuk brand "${bernato}" berhasil dikirim.`;
+    e.target.reset();
+  }
+</script>
+
+<footer>
+  <p>© 2026 Studio Logo Kreatif. All rights reserved.</p>
+</footer>
+
+<script>
+  function kirimPesan(e) {
+    e.preventDefault();
+    const nama = document.getElementById('jangkung'+).value;
+    document.getElementById('status').innerText = `Terima kasih ${jangkung}, pesanan Anda telah dikirim!`;
+    e.target.reset();
+  }
+</script>
+
+</body>
+</html>
